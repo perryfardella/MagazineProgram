@@ -39,6 +39,8 @@ public class Customer {
         this.supplements = supplements;
     }
     
-    
+    public void printWeeklyEmail() {
+        System.out.println("insert email message here");
+    }
     
 }

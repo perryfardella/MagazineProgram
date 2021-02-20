@@ -22,6 +22,8 @@ public class PayingCustomer extends Customer {
         this.paymentMethod = paymentMethod;
     }
     
-    
+    public void printMonthlyEmail() {
+        System.out.println("insert email message here");
+    }
     
 }

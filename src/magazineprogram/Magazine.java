@@ -6,12 +6,14 @@ package magazineprogram;
  */
 public class Magazine {
     protected String name;
+    protected String description;
     protected double weeklyCost;
     //Does a magazine have attached supplements?
     protected Supplement[] supplements;
     
-    Magazine(String name, double weeklyCost, Supplement[] supplements) {
+    Magazine(String name, String description, double weeklyCost, Supplement[] supplements) {
         this.name = name;
+        this.description = description;
         this.weeklyCost = weeklyCost;
         this. supplements = supplements;
     }
@@ -22,6 +24,14 @@ public class Magazine {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public double getWeeklyCost() {
