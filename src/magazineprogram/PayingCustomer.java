@@ -9,4 +9,19 @@ public class PayingCustomer extends Customer {
     protected String paymentMethod;
     //protected AssociateCustomer[]
     
+    PayingCustomer(String name, String email, Supplement[] supplements, String paymentMethod) {
+        super(name, email, supplements);
+        this.paymentMethod = paymentMethod;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+    
+    
+    
 }

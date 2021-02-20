@@ -12,4 +12,22 @@ public class Supplement {
         this.name = name;
         this.weeklyCost = weeklyCost;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeeklyCost() {
+        return weeklyCost;
+    }
+
+    public void setWeeklyCost(double weeklyCost) {
+        this.weeklyCost = weeklyCost;
+    }
+    
+    
 }

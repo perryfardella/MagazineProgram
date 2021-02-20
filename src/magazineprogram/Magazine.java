@@ -15,5 +15,30 @@ public class Magazine {
         this.weeklyCost = weeklyCost;
         this. supplements = supplements;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeeklyCost() {
+        return weeklyCost;
+    }
+
+    public void setWeeklyCost(double weeklyCost) {
+        this.weeklyCost = weeklyCost;
+    }
+
+    public Supplement[] getSupplements() {
+        return supplements;
+    }
+
+    public void setSupplements(Supplement[] supplements) {
+        this.supplements = supplements;
+    }
+    
     
 }
