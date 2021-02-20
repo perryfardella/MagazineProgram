@@ -10,7 +10,12 @@ public class MagazineProgram {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Magazine theITTimes = new Magazine(
+                "The IT Times", 
+                "A magazine for IT professionals", 
+                4.95,
+                []
+        );
     }
     
 }

@@ -50,5 +50,4 @@ public class Magazine {
         this.supplements = supplements;
     }
     
-    
 }

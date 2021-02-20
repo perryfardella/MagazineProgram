@@ -39,5 +39,4 @@ public class Supplement {
         this.weeklyCost = weeklyCost;
     }
     
-    
 }
