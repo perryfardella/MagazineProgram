@@ -1,4 +1,5 @@
 package magazineprogram;
+import java.util.ArrayList;
 
 /**
  *
@@ -9,13 +10,13 @@ public class Magazine {
     protected String description;
     protected double weeklyCost;
     //Does a magazine have attached supplements?
-    protected Supplement[] supplements;
+    protected ArrayList<Supplement> supplements;
     
-    Magazine(String name, String description, double weeklyCost, Supplement[] supplements) {
+    Magazine(String name, String description, double weeklyCost, ArrayList<Supplement> supplements) {
         this.name = name;
         this.description = description;
         this.weeklyCost = weeklyCost;
-        this. supplements = supplements;
+        this.supplements = supplements;
     }
 
     public String getName() {
@@ -42,11 +43,11 @@ public class Magazine {
         this.weeklyCost = weeklyCost;
     }
 
-    public Supplement[] getSupplements() {
+    public ArrayList<Supplement> getSupplements() {
         return supplements;
     }
 
-    public void setSupplements(Supplement[] supplements) {
+    public void setSupplements(ArrayList<Supplement> supplements) {
         this.supplements = supplements;
     }
     
