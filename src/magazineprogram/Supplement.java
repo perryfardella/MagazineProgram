@@ -9,7 +9,7 @@ public class Supplement {
     protected String description;
     protected double weeklyCost;
     
-    Supplement(String name, String description, double weeklyCost) {
+    public Supplement(String name, String description, double weeklyCost) {
         this.name = name;
         this.description = description;
         this.weeklyCost = weeklyCost;

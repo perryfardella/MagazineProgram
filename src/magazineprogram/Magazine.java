@@ -12,7 +12,7 @@ public class Magazine {
     //Does a magazine have attached supplements?
     protected ArrayList<Supplement> supplements;
     
-    Magazine(String name, String description, double weeklyCost, ArrayList<Supplement> supplements) {
+    public Magazine(String name, String description, double weeklyCost, ArrayList<Supplement> supplements) {
         this.name = name;
         this.description = description;
         this.weeklyCost = weeklyCost;

@@ -35,7 +35,11 @@ public class MagazineProgram {
         AssociateCustomer julianHargreaves = new AssociateCustomer("Julian Hargreaves", "jHargreaves@live.com", julianSupplements);
         
         ArrayList<Supplement> mikeSupplements = new ArrayList<>(Arrays.asList(c, go));
-        AssociateCustomer mikeRivers = new AssociateCustomer("Mike Rivers", "MikeyRiv@gmail.com", mikeSupplements);
+        AssociateCustomer mikeRivers = new AssociateCustomer("Mike Rivers", "mikeyRiv@gmail.com", mikeSupplements);
+        
+        AssociateCustomer lauraAhmed = new AssociateCustomer("Laura Ahmed", "lauraA@gmail.com");
+        
+        ArrayList<AssociateCustomer> johnsEmployees = new ArrayList<>(Arrays.asList(julianHargreaves, mikeRivers, lauraAhmed));
         
         // B) construct an array of 5-6 different customers of various types with made-up details built in to the program
     }
