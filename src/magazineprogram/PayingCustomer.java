@@ -1,5 +1,7 @@
 package magazineprogram;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Perry Fardella (33667316)
@@ -9,7 +11,7 @@ public class PayingCustomer extends Customer {
     protected String paymentMethod;
     //protected AssociateCustomer[]
     
-    PayingCustomer(String name, String email, Supplement[] supplements, String paymentMethod) {
+    PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod) {
         super(name, email, supplements);
         this.paymentMethod = paymentMethod;
     }

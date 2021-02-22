@@ -1,5 +1,7 @@
 package magazineprogram;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Perry Fardella (33667316)
@@ -7,9 +9,9 @@ package magazineprogram;
 public class Customer {
     protected String name;
     protected String email;
-    protected Supplement[] supplements;
+    protected ArrayList<Supplement> supplements;
     
-    Customer(String name, String email, Supplement[] supplements) {
+    Customer(String name, String email, ArrayList<Supplement> supplements) {
         this.name = name;
         this.email = email;
         this.supplements = supplements;
@@ -31,11 +33,11 @@ public class Customer {
         this.email = email;
     }
 
-    public Supplement[] getSupplements() {
+    public ArrayList<Supplement> getSupplements() {
         return supplements;
     }
 
-    public void setSupplements(Supplement[] supplements) {
+    public void setSupplements(ArrayList<Supplement> supplements) {
         this.supplements = supplements;
     }
     
