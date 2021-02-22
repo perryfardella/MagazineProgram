@@ -11,11 +11,20 @@ public class Customer {
     protected String email;
     protected ArrayList<Supplement> supplements;
     
-    Customer(String name, String email, ArrayList<Supplement> supplements) {
+    // Constructor instantiating all variables
+    public Customer(String name, String email, ArrayList<Supplement> supplements) {
         this.name = name;
         this.email = email;
         this.supplements = supplements;
     }
+
+    // Constructor for customers without any magazine supplements
+    public Customer(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+    
+    
 
     public String getName() {
         return name;

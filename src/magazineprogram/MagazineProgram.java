@@ -23,12 +23,21 @@ public class MagazineProgram {
         ArrayList<Supplement> supplements = new ArrayList<>(Arrays.asList(java, javaScript, c, cSharp, go, jobsBoard));
         supplements.add(java);
         
+        // A) construct a magazine with an array of 3-4 supplements with made-up details built in to the progra,
         Magazine theITTimes = new Magazine(
                 "The IT Times", 
                 "A magazine for IT professionals", 
                 4.95,
                 supplements
         );
+        
+        ArrayList<Supplement> julianSupplements = new ArrayList<>(Arrays.asList(java, jobsBoard));
+        AssociateCustomer julianHargreaves = new AssociateCustomer("Julian Hargreaves", "jHargreaves@live.com", julianSupplements);
+        
+        ArrayList<Supplement> mikeSupplements = new ArrayList<>(Arrays.asList(c, go));
+        AssociateCustomer mikeRivers = new AssociateCustomer("Mike Rivers", "MikeyRiv@gmail.com", mikeSupplements);
+        
+        // B) construct an array of 5-6 different customers of various types with made-up details built in to the program
     }
     
 }
