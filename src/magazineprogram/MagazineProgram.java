@@ -40,8 +40,28 @@ public class MagazineProgram {
         AssociateCustomer lauraAhmed = new AssociateCustomer("Laura Ahmed", "lauraA@gmail.com");
         
         ArrayList<AssociateCustomer> johnsEmployees = new ArrayList<>(Arrays.asList(julianHargreaves, mikeRivers, lauraAhmed));
+        ArrayList<Supplement> johnSupplements = new ArrayList<>(Arrays.asList(jobsBoard, cSharp));
+        
+        PayingCustomer johnWinters = new PayingCustomer("John Winters", "jWi@hotmail.com", johnSupplements, "Credit Card", johnsEmployees );
+        
+        PayingCustomer michelleTrunket = new PayingCustomer("Michelle Trunket", "mTrunk@orionMail.com", "Direct Debit");
+        
+        ArrayList<Supplement> hunterSupplements = new ArrayList<>(Arrays.asList(jobsBoard, javaScript, cSharp));
+        PayingCustomer hunterRedford = new PayingCustomer("Hunter Redford", "hred@live.com", hunterSupplements, "Bank Transfer");
         
         // B) construct an array of 5-6 different customers of various types with made-up details built in to the program
+        Customer array[] = {julianHargreaves, mikeRivers, lauraAhmed, johnWinters, michelleTrunket, hunterRedford};
+        
+        // C) print out the text of all the emails for all customers for four weeks of magazines
+        // D) print out the text for the end of month emails for the paying customers
+        // E) add a new customer to the magazine service
+       
+        
+        // F) remove an existing customer from the magazine service
+        
+            // Magazine needs to have an ArrayList of Customers
+        
+        // G) thoroughly test your program
     }
     
 }

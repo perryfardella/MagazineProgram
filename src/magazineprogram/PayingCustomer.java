@@ -11,24 +11,24 @@ public class PayingCustomer extends Customer {
     protected String paymentMethod;
     protected ArrayList<AssociateCustomer> associateCustomers;
     
-    PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod, ArrayList<AssociateCustomer> associateCustomers) {
+    public PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod, ArrayList<AssociateCustomer> associateCustomers) {
         super(name, email, supplements);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = associateCustomers;
     }
 
-    public PayingCustomer(String paymentMethod, String name, String email, ArrayList<Supplement> supplements) {
+    public PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod) {
         super(name, email, supplements);
         this.paymentMethod = paymentMethod;
     }
     
-    public PayingCustomer(String paymentMethod, ArrayList<AssociateCustomer> associateCustomers, String name, String email) {
+    public PayingCustomer(String name, String email, String paymentMethod,ArrayList<AssociateCustomer> associateCustomers) {
         super(name, email);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = associateCustomers;
     }
 
-    public PayingCustomer(String paymentMethod, String name, String email) {
+    public PayingCustomer(String name, String email,String paymentMethod) {
         super(name, email);
         this.paymentMethod = paymentMethod;
     }
