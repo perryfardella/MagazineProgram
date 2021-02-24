@@ -11,12 +11,24 @@ public class Magazine {
     protected double weeklyCost;
     //Does a magazine have attached supplements?
     protected ArrayList<Supplement> supplements;
+    protected ArrayList<Customer> customers;
+    
+    // Need to give Magazine an ArrayList of customers
+    
+    public Magazine(String name, String description, double weeklyCost, ArrayList<Supplement> supplements, ArrayList<Customer> customers) {
+        this.name = name;
+        this.description = description;
+        this.weeklyCost = weeklyCost;
+        this.supplements = supplements;
+        this.customers = customers;
+    }
     
     public Magazine(String name, String description, double weeklyCost, ArrayList<Supplement> supplements) {
         this.name = name;
         this.description = description;
         this.weeklyCost = weeklyCost;
         this.supplements = supplements;
+        this.customers = new ArrayList<Customer>();
     }
 
     public String getName() {
