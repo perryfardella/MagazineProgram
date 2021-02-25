@@ -9,7 +9,6 @@ public class Magazine {
     protected String name;
     protected String description;
     protected double weeklyCost;
-    //Does a magazine have attached supplements?
     protected ArrayList<Supplement> supplements;
     protected ArrayList<Customer> customers;
     
@@ -53,6 +52,14 @@ public class Magazine {
 
     public void setWeeklyCost(double weeklyCost) {
         this.weeklyCost = weeklyCost;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(ArrayList<Customer> customers) {
+        this.customers = customers;
     }
 
     public ArrayList<Supplement> getSupplements() {

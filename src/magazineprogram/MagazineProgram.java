@@ -55,8 +55,12 @@ public class MagazineProgram {
         theITTimes.customers = customers;
         
         // C) print out the text of all the emails for all customers for four weeks of magazines
+//        for(Customer customer : theITTimes.getCustomers()) {
+//            customer.printWeeklyEmail();
+//        }
         
         // D) print out the text for the end of month emails for the paying customers
+        johnWinters.printMonthlyEmail(theITTimes.getWeeklyCost());
         
         // E) add a new customer to the magazine service - DONE
         theITTimes.customers.add(new PayingCustomer("Trent Herring", "tHerr@orionMail.com", "Direct Debit"));
