@@ -8,11 +8,22 @@ import java.util.Arrays;
  * @author Perry Fardella (33667316)
  */
 public class MagazineProgram {
+    
+    public static void displayStudentDetails() {
+        System.out.println("Student details");
+        System.out.println("Name: Perry Fardella");
+        System.out.println("Student Number: 33667316");
+        System.out.println("Mode of enrolment: Internal");
+        System.out.println("Tutor name: Ferdous Sohel");
+        System.out.println("Tutorial day/time: Wednesday 13:30");
+        System.out.println();
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        displayStudentDetails();
         Supplement java = new Supplement("Java", "All the latest news and development around the language of Java", 1.95);
         Supplement javaScript = new Supplement("JavaScript", "All the latest news and development around the language of JavaScript", 2.05);
         Supplement c = new Supplement("C", "All the latest news and development around the language of C", 0.95);
@@ -43,33 +54,49 @@ public class MagazineProgram {
         PayingCustomer hunterRedford = new PayingCustomer("Hunter Redford", "hred@live.com", new ArrayList<>(Arrays.asList(jobsBoard, javaScript, cSharp)), "Bank Transfer");
 
         // B) construct an array of 5-6 different customers of various types with made-up details built in to the program - DONE
-        ArrayList<Customer> customers = new ArrayList<Customer>() {{
-            add(julianHargreaves);
-            add(mikeRivers);
-            add(lauraAhmed);
-            add(johnWinters);
-            add(michelleTrunket);
-            add(hunterRedford);            
-        }};
-        
+        ArrayList<Customer> customers = new ArrayList<Customer>() {
+            {
+                add(julianHargreaves);
+                add(mikeRivers);
+                add(lauraAhmed);
+                add(johnWinters);
+                add(michelleTrunket);
+                add(hunterRedford);
+            }
+        };
+
         theITTimes.customers = customers;
-        
-        // C) print out the text of all the emails for all customers for four weeks of magazines
-//        for(Customer customer : theITTimes.getCustomers()) {
-//            customer.printWeeklyEmail();
-//        }
-        
-        // D) print out the text for the end of month emails for the paying customers
-        johnWinters.printMonthlyEmail(theITTimes.getWeeklyCost());
-        
+
+        // C) print out the text of all the emails for all customers for four weeks of magazines - DONE
+        System.out.println("Printing out the text of all the emails for all customers for four weeks of magazines");
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Week : " + (i + 1));
+            for (Customer customer : theITTimes.getCustomers()) {
+                customer.printWeeklyEmail();
+            }
+        }
+        for (int i=0; i < theITTimes.getCustomers().size(); i++ )  {
+            if (theITTimes.getCustomers().get(i) instanceof PayingCustomer) {
+                ((PayingCustomer) theITTimes.getCustomers().get(i)).printMonthlyEmail(theITTimes.getWeeklyCost());
+            }
+        }
+
+        // D) print out the text for the end of month emails for the paying customers - DONE
+        System.out.println("Printing out the text for the end of month emails for the paying customers");
+        for (int i=0; i < theITTimes.getCustomers().size(); i++ )  {
+            if (theITTimes.getCustomers().get(i) instanceof PayingCustomer) {
+                ((PayingCustomer) theITTimes.getCustomers().get(i)).printMonthlyEmail(theITTimes.getWeeklyCost());
+            }
+        }
+
         // E) add a new customer to the magazine service - DONE
+        System.out.println("Adding Trent Herring to the magazine service");
         theITTimes.customers.add(new PayingCustomer("Trent Herring", "tHerr@orionMail.com", "Direct Debit"));
-        
-        // F) remove an existing customer from the magazine service
-        // Remove Michelle Trunket from the magazine service
+
+        // F) remove an existing customer from the magazine service - DONE
+        System.out.println("Removing Michelle Trunket from the magazine service");
         theITTimes.customers.remove(4);
-        
+
         // G) thoroughly test your program
     }
-
 }

@@ -51,6 +51,7 @@ public class Customer {
     }
 
     public void printWeeklyEmail() {
+        System.out.println("----------------------------------------------------------------------------");
         System.out.println("Hi, " + getName());
         System.out.println("Your magazine is ready to look at!");
 
@@ -62,6 +63,7 @@ public class Customer {
         } else {
             System.out.println("You are not subscribed to any additional supplements.");
         }
+        System.out.println("----------------------------------------------------------------------------");
         System.out.println();
     }
 
@@ -71,7 +73,7 @@ public class Customer {
         }
     }
 
-    public double sumSupplementFees() {
+    public double sumMonthlySupplementFees() {
         double totalSupplementFees = 0;
         if (!getSupplements().isEmpty()) {
             for (Supplement supplement : getSupplements()) {
@@ -79,7 +81,7 @@ public class Customer {
             }
         }
 
-        return totalSupplementFees;
+        return totalSupplementFees * 4;
     }
 
 }

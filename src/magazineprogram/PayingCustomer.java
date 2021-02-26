@@ -54,22 +54,27 @@ public class PayingCustomer extends Customer {
     
     
     public void printMonthlyEmail(double weeklyMagazineCost) {
+        double totalFees = 0;
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Hi, " + getName());
-        System.out.println("The total amount charged to your account this month is: ");
         System.out.println("Please see a breakdown of your fees below:");
         
         System.out.println("\n" + getName() + ":");
         System.out.println(" -Core magazine subscription ($" + weeklyMagazineCost + " * 4weeks = $" + weeklyMagazineCost * 4 + ")");
         printSupplementMonthlyFees();
+        System.out.println(getName() + " total fees for the month is: $" + (weeklyMagazineCost * 4 + sumMonthlySupplementFees()));
+        totalFees += weeklyMagazineCost * 4 + sumMonthlySupplementFees();
         System.out.println();
         
         for(AssociateCustomer associateCustomer : getAssociateCustomers()) {
             System.out.println(associateCustomer.getName());
             System.out.println(" -Core magazine subscription ($" + weeklyMagazineCost + " * 4weeks = $" + weeklyMagazineCost * 4 + ")");
             associateCustomer.printSupplementMonthlyFees();
+            System.out.println(associateCustomer.getName() + " total fees for the month is: $" + (weeklyMagazineCost * 4 + associateCustomer.sumMonthlySupplementFees()));
+            totalFees +=  weeklyMagazineCost * 4 + associateCustomer.sumMonthlySupplementFees();
             System.out.println();
         }
+        System.out.println("The total amount charged to your account this month is: $" + totalFees);
         
         System.out.println("----------------------------------------------------------------------------");
         
