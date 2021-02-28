@@ -1,8 +1,8 @@
 package magazineprogram;
 
 /**
- *
- * @author Perry
+ * @author Perry Fardella (33667316)
+ * @description A test class to test the basic functionality of the Customer class
  */
 public class CustomerTest {
 

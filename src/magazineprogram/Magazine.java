@@ -2,8 +2,9 @@ package magazineprogram;
 import java.util.ArrayList;
 
 /**
- *
- * @author Perry
+ * @author Perry Fardella (33667316)
+ * @description A class that provides all the basic variables and functionality required
+ * to instantiate and modify a magazine.
  */
 public class Magazine {
 

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
  * @author Perry Fardella (33667316)
+ * @description A class that has a main method that tests all functionality of the program
+ * as specified in the assignment documentation.
  */
 public class MagazineProgram {
     

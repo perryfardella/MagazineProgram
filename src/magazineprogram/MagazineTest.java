@@ -2,7 +2,7 @@ package magazineprogram;
 
 /**
  *
- * @author Perry
+ * @author Perry Fardella (33667316)
  */
 public class MagazineTest {
 
