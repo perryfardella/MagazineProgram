@@ -8,51 +8,105 @@ import java.util.ArrayList;
  */
 public class PayingCustomer extends Customer {
     //Make this an enum? Declare a seperate enum class for payment methods?
-    protected String paymentMethod;
+
+    /**
+     *
+     */
+        protected String paymentMethod;
+
+    /**
+     *
+     */
     protected ArrayList<AssociateCustomer> associateCustomers;
     
+    /**
+     *
+     * @param name
+     * @param email
+     * @param supplements
+     * @param paymentMethod
+     * @param associateCustomers
+     */
     public PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod, ArrayList<AssociateCustomer> associateCustomers) {
         super(name, email, supplements);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = associateCustomers;
     }
 
+    /**
+     *
+     * @param name
+     * @param email
+     * @param supplements
+     * @param paymentMethod
+     */
     public PayingCustomer(String name, String email, ArrayList<Supplement> supplements, String paymentMethod) {
         super(name, email, supplements);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = new ArrayList<AssociateCustomer>();
     }
     
+    /**
+     *
+     * @param name
+     * @param email
+     * @param paymentMethod
+     * @param associateCustomers
+     */
     public PayingCustomer(String name, String email, String paymentMethod,ArrayList<AssociateCustomer> associateCustomers) {
         super(name, email);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = associateCustomers;
     }
 
+    /**
+     *
+     * @param name
+     * @param email
+     * @param paymentMethod
+     */
     public PayingCustomer(String name, String email,String paymentMethod) {
         super(name, email);
         this.paymentMethod = paymentMethod;
         this.associateCustomers = new ArrayList<AssociateCustomer>();
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPaymentMethod() {
         return paymentMethod;
     }
 
+    /**
+     *
+     * @param paymentMethod
+     */
     public void setPaymentMethod(String paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<AssociateCustomer> getAssociateCustomers() {
         return associateCustomers;
     }
 
+    /**
+     *
+     * @param associateCustomers
+     */
     public void setAssociateCustomers(ArrayList<AssociateCustomer> associateCustomers) {
         this.associateCustomers = associateCustomers;
     }
     
-    
-    
+    /**
+     *
+     * @param weeklyMagazineCost
+     */
     public void printMonthlyEmail(double weeklyMagazineCost) {
         double totalFees = 0;
         System.out.println("----------------------------------------------------------------------------");

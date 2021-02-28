@@ -9,6 +9,9 @@ import java.util.Arrays;
  */
 public class MagazineProgram {
     
+    /**
+     * 
+     */
     public static void displayStudentDetails() {
         System.out.println("Student details");
         System.out.println("Name: Perry Fardella");

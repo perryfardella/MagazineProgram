@@ -69,7 +69,7 @@ public class Customer {
 
     public void printSupplementMonthlyFees() {
         for (Supplement supplement : getSupplements()) {
-            System.out.println(" -" + supplement.getName() + " ($" + supplement.getWeeklyCost() + " * 4weeks = $" + supplement.getWeeklyCost()*4 + ")");
+            System.out.println(" -" + supplement.getName() + " ($" + supplement.getWeeklyCost() + " * 4weeks = $" + supplement.getWeeklyCost() * 4 + ")");
         }
     }
 
