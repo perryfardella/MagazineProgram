@@ -7,22 +7,22 @@ package magazineprogram;
 public class Supplement {
 
     /**
-     *
+     * @description A String containing the supplement's name
      */
     protected String name;
 
     /**
-     *
+     * @description A String containing the supplement's description
      */
     protected String description;
 
     /**
-     *
+     * @description A double containing the supplement's weekly cost
      */
     protected double weeklyCost;
     
     /**
-     *
+     * @description Constructor containing all variables
      * @param name
      * @param description
      * @param weeklyCost

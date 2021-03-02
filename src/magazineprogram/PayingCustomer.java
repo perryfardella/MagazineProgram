@@ -11,12 +11,13 @@ public class PayingCustomer extends Customer {
     //Make this an enum? Declare a seperate enum class for payment methods?
 
     /**
-     *
+     * @description A String that records the customers preferred payment method
      */
         protected String paymentMethod;
 
     /**
-     *
+     * @description An ArrayList of all the associated customers the paying customer
+     * pays for
      */
     protected ArrayList<AssociateCustomer> associateCustomers;
     

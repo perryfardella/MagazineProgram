@@ -9,31 +9,29 @@ import java.util.ArrayList;
 public class Magazine {
 
     /**
-     *
+     * @description A String containing the magazine's name
      */
     protected String name;
 
     /**
-     *
+     * @description A String containing the magazine's description
      */
     protected String description;
 
     /**
-     *
+     * @description A double specifying the magazine's weekly cost
      */
     protected double weeklyCost;
 
     /**
-     *
+     * @description An ArrayList of all supplements available with the magazine
      */
     protected ArrayList<Supplement> supplements;
 
     /**
-     *
+     * @description An ArrayList of all customers subscribed to the magazine
      */
     protected ArrayList<Customer> customers;
-    
-    // Need to give Magazine an ArrayList of customers
     
     /**
      *
