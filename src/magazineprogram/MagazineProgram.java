@@ -27,6 +27,7 @@ public class MagazineProgram {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("TEST: displaying student details: ");
         displayStudentDetails();
         Supplement java = new Supplement("Java", "All the latest news and development around the language of Java", 1.95);
         Supplement javaScript = new Supplement("JavaScript", "All the latest news and development around the language of JavaScript", 2.05);
@@ -44,6 +45,8 @@ public class MagazineProgram {
                 4.95,
                 supplements
         );
+        System.out.println("Instantiating a magazine...");
+        System.out.println("TEST: does the magazine exist? " + (theITTimes instanceof Magazine) + "\n");
 
         AssociateCustomer julianHargreaves = new AssociateCustomer("Julian Hargreaves", "jHargreaves@live.com", new ArrayList<>(Arrays.asList(java, jobsBoard)));
 
@@ -70,9 +73,17 @@ public class MagazineProgram {
         };
 
         theITTimes.customers = customers;
+        
+        System.out.println("Adding customers to the Magazine...");
+        System.out.println("TEST: list the customers: ");
+        
+        for (Customer customer: theITTimes.customers){
+            System.out.println(customer.name);
+        }
+        System.out.println();
 
         // C) print out the text of all the emails for all customers for four weeks of magazines - DONE
-        System.out.println("Printing out the text of all the emails for all customers for four weeks of magazines");
+        System.out.println("TEST: Printing out the text of all the emails for all customers for four weeks of magazines");
         for (int i = 0; i < 4; i++) {
             System.out.println("Week : " + (i + 1));
             for (Customer customer : theITTimes.getCustomers()) {
@@ -86,7 +97,7 @@ public class MagazineProgram {
         }
 
         // D) print out the text for the end of month emails for the paying customers - DONE
-        System.out.println("Printing out the text for the end of month emails for the paying customers");
+        System.out.println("TEST: Printing out the text for the end of month emails for the paying customers");
         for (int i=0; i < theITTimes.getCustomers().size(); i++ )  {
             if (theITTimes.getCustomers().get(i) instanceof PayingCustomer) {
                 ((PayingCustomer) theITTimes.getCustomers().get(i)).printMonthlyEmail(theITTimes.getWeeklyCost());
@@ -94,13 +105,17 @@ public class MagazineProgram {
         }
 
         // E) add a new customer to the magazine service - DONE
-        System.out.println("Adding Trent Herring to the magazine service");
+        System.out.println("Test: Adding Trent Herring to the magazine service");
         theITTimes.customers.add(new PayingCustomer("Trent Herring", "tHerr@orionMail.com", "Direct Debit"));
 
         // F) remove an existing customer from the magazine service - DONE
-        System.out.println("Removing Michelle Trunket from the magazine service");
+        System.out.println("Test: Removing Michelle Trunket from the magazine service");
         theITTimes.customers.remove(4);
+        System.out.println("Displaying customers to make sure that Trent has been added and Michelle has been removed: ");
+        for (Customer customer: theITTimes.customers){
+            System.out.println(customer.name);
+        }
+        System.out.println();
 
-        // G) thoroughly test your program
     }
 }
