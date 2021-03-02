@@ -105,7 +105,9 @@ public class PayingCustomer extends Customer {
     }
     
     /**
-     *
+     * @description A method that prints the monthly email all paying customers receive,
+     * stating the total fee being charged to their account as well as a breakdown of where
+     * the fees are coming from
      * @param weeklyMagazineCost
      */
     public void printMonthlyEmail(double weeklyMagazineCost) {
@@ -132,11 +134,6 @@ public class PayingCustomer extends Customer {
         System.out.println("The total amount charged to your account this month is: $" + totalFees);
         
         System.out.println("----------------------------------------------------------------------------");
-        
-        // For each customer sum their fees
-//        for(Supplement supplement : getSupplements()) {
-//            System.out.println("-" + supplement.getName());
-//        }
     }
     
 }

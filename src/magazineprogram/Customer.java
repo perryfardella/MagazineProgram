@@ -20,14 +20,12 @@ public class Customer {
     protected String email;
 
     /**
-     *
+     * @description A variable to hold the customer's magazine supplements they are subscribed to
      */
     protected ArrayList<Supplement> supplements;
 
-    // Constructor instantiating all variables
-
     /**
-     *
+     * @description A constructor to initialize all variables
      * @param name
      * @param email
      * @param supplements
@@ -41,7 +39,7 @@ public class Customer {
     // Constructor for customers without any magazine supplements
 
     /**
-     *
+     * @description A constructor to initialize all variables except supplements
      * @param name
      * @param email
      */
@@ -100,7 +98,9 @@ public class Customer {
     }
 
     /**
-     *
+     * @description A method to print the customers weekly email, telling them that
+     * the latest issue of the magazine and the customers supplements is ready for view.
+     * The email also lists all the supplements a customer is subscribed to.
      */
     public void printWeeklyEmail() {
         System.out.println("----------------------------------------------------------------------------");
