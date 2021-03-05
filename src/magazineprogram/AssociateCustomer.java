@@ -3,9 +3,11 @@ package magazineprogram;
 import java.util.ArrayList;
 
 /**
+ * @filename AssociateCustomer.java
  * @author Perry Fardella (33667316)
  * @descripton A class that extends Customer, has no additional functionality and was
  * purely created to help distinguish between Associate and Paying Customers.
+ * @date 04/03/2021
  */
 public class AssociateCustomer extends Customer {
     

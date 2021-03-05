@@ -3,9 +3,11 @@ package magazineprogram;
 import java.util.ArrayList;
 
 /**
+ * @filename PayingCustomer.java
  * @author Perry Fardella (33667316)
  * @descripton A class that extends Customer and provides additional variables and methods
  * required for paying customers.
+ * @date 04/03/2021
  */
 public class PayingCustomer extends Customer {
     //Make this an enum? Declare a seperate enum class for payment methods?

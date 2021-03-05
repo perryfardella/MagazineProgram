@@ -3,9 +3,11 @@ package magazineprogram;
 import java.util.ArrayList;
 
 /**
+ * @filename Customer.java
  * @author Perry Fardella (33667316)
  * @description A class to provide the functionality and variables needed to instantiate a
  * basic magazine customer.
+ * @date 04/03/2021
  */
 public class Customer {
 

@@ -1,8 +1,11 @@
 package magazineprogram;
 
 /**
- *
+ * @filename Supplement.java
  * @author Perry Fardella (33667316)
+ * @description A class that provides all the basic variables and functionality required
+ * to instantiate and modify a magazine supplement.
+ * @date 04/03/2021
  */
 public class Supplement {
 
